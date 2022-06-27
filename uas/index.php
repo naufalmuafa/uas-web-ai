@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
         rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
         crossorigin="anonymous">
+        <link rel="stylesheet" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
 </head>
 <body>
     <div  class="container" style="max-width: 50%;">
@@ -22,6 +23,7 @@
     <div id="pencarian"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript">
 
         // membuat fungsi untuk memanggil id CARI
@@ -55,6 +57,10 @@
                 }
             });
         });
+
+        $(document).ready( function () {
+            $('#tabelku').DataTable();
+        } );
     </script>
 </body>
 </html>
